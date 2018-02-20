@@ -55,22 +55,19 @@ public class Wordpresslogin {
 
 	public Object[][] testdata1() {
 
-		
-	Excelutil obj= new Excelutil("C:\\Users\\welcome\\workspace\\datadrivenframework\\Testdata\\Testdata.xlsx");
-		
-	int rows=obj.getrowcount(0)	;
-	Object[][] data = new Object[rows][2];
+		Excelutil obj = new Excelutil("C:\\Users\\welcome\\workspace\\datadrivenframework\\Testdata\\Testdata.xlsx");
 
-		
-		for(int i=0;i<rows;i++){
-		data[i][0] = obj.readingdata(0, i, 0);
-		data[i][1] = obj.readingdata(0, i, 1);
+		int rows = obj.getrowcount(0);
+		Object[][] data = new Object[rows][2];
 
-		
-		
-	}
+		for (int i = 0; i < rows; i++) {
+			data[i][0] = obj.readingdata(0, i, 0);
+			data[i][1] = obj.readingdata(0, i, 1);
+
+		}
 		return data;
 	}
+
 	@AfterMethod
 	public void teardown() throws Exception {
 		Thread.sleep(3000);

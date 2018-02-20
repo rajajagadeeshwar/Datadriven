@@ -32,20 +32,20 @@ public class Excelutil {
 
 	public String readingdata(int i, int row, int column) {
 
-		sh=wb.getSheetAt(i);
-	String data=sh.getRow(row).getCell(column).getStringCellValue();
-	
-	return data;
-	
+		sh = wb.getSheetAt(i);
+		String data = sh.getRow(row).getCell(column).getStringCellValue();
+
+		return data;
+
 	}
-	
-	public int getrowcount(int sheetindex){
-		
-		int row=wb.getSheetAt(sheetindex).getLastRowNum();
-		
-		 row= row+1;
+
+	public int getrowcount(int sheetindex) {
+
+		int row = wb.getSheetAt(sheetindex).getLastRowNum();
+
+		row = row + 1;
 		return row;
-		
+
 	}
 
 }
