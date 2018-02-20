@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="datadriven.Wordpresslogin">
+      <class name="datadrivenwithexcel.Wordpresslogin">
         <methods>
+          <include name="logintoword" invocation-numbers="0 1 3"/>
           <include name="teardown"/>
-          <include name="logintoword" invocation-numbers="0 2"/>
           <include name="browser"/>
         </methods>
-      </class> <!-- datadriven.Wordpresslogin -->
+      </class> <!-- datadrivenwithexcel.Wordpresslogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,4 +1,4 @@
-package datadrivenwithdataprovider;
+package datadrivenwithexcel;
 /**
  * @author Jagadeeshwar
  *
@@ -14,6 +14,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import datadrivenwithdataprovider.Screenshot;
 
 public class Wordpresslogin {
 
@@ -53,20 +55,22 @@ public class Wordpresslogin {
 
 	public Object[][] testdata1() {
 
-		Object[][] data = new Object[3][2];
+		
+	Excelutil obj= new Excelutil("C:\\Users\\welcome\\workspace\\datadrivenframework\\Testdata\\Testdata.xlsx");
+		
+	int rows=obj.getrowcount(0)	;
+	Object[][] data = new Object[rows][2];
 
-		data[0][0] = "adminnn";
-		data[0][1] = "demo";
+		
+		for(int i=0;i<rows;i++){
+		data[i][0] = obj.readingdata(0, i, 0);
+		data[i][1] = obj.readingdata(0, i, 1);
 
-		data[1][0] = "admin";
-		data[1][1] = "demo123";
-
-		data[2][0] = "adminnn";
-		data[2][1] = "demo1";
-
+		
+		
+	}
 		return data;
 	}
-
 	@AfterMethod
 	public void teardown() throws Exception {
 		Thread.sleep(3000);

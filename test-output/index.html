@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\welcome\AppData\Local\Temp\testng-eclipse-1502315893\testng-customsuite.xml</span>
+                    <span>C:\Users\welcome\AppData\Local\Temp\testng-eclipse-1544421491\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,12 +102,17 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="datadriven.Wordpresslogin" hash-for-method="logintoword(adminnn, demo1)">logintoword(adminnn, demo1)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="datadrivenwithexcel.Wordpresslogin" hash-for-method="logintoword(admin1, demo12)">logintoword(admin1, demo12)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="datadriven.Wordpresslogin" hash-for-method="logintoword(adminnn, demo)">logintoword(adminnn, demo)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="datadrivenwithexcel.Wordpresslogin" hash-for-method="logintoword(admin2, demo123)">logintoword(admin2, demo123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="datadrivenwithexcel.Wordpresslogin" hash-for-method="logintoword(admin, demo1)">logintoword(admin, demo1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,7 +126,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="datadriven.Wordpresslogin" hash-for-method="logintoword(admin, demo123)">logintoword(admin, demo123)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="datadrivenwithexcel.Wordpresslogin" hash-for-method="logintoword(admin, demo123)">logintoword(admin, demo123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -139,21 +144,21 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">datadriven.Wordpresslogin</span>
+              <span class="class-name">datadrivenwithexcel.Wordpresslogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="logintoword(adminnn, demo1)">
-                  </a> <!-- logintoword(adminnn, demo1) -->
+                  <a name="logintoword(admin1, demo12)">
+                  </a> <!-- logintoword(admin1, demo12) -->
                   <span class="method-name">logintoword</span>
-                  <span class="parameters">(adminnn, demo1)</span>
+                  <span class="parameters">(admin1, demo12)</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertTrue(Assert.java:41)
 	at org.testng.Assert.assertTrue(Assert.java:51)
-	at datadriven.Wordpresslogin.logintoword(Wordpresslogin.java:47)
+	at datadrivenwithexcel.Wordpresslogin.logintoword(Wordpresslogin.java:47)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -185,16 +190,57 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="logintoword(adminnn, demo)">
-                  </a> <!-- logintoword(adminnn, demo) -->
+                  <a name="logintoword(admin2, demo123)">
+                  </a> <!-- logintoword(admin2, demo123) -->
                   <span class="method-name">logintoword</span>
-                  <span class="parameters">(adminnn, demo)</span>
+                  <span class="parameters">(admin2, demo123)</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertTrue(Assert.java:41)
 	at org.testng.Assert.assertTrue(Assert.java:51)
-	at datadriven.Wordpresslogin.logintoword(Wordpresslogin.java:47)
+	at datadrivenwithexcel.Wordpresslogin.logintoword(Wordpresslogin.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintoword(admin, demo1)">
+                  </a> <!-- logintoword(admin, demo1) -->
+                  <span class="method-name">logintoword</span>
+                  <span class="parameters">(admin, demo1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at datadrivenwithexcel.Wordpresslogin.logintoword(Wordpresslogin.java:47)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -229,7 +275,7 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">datadriven.Wordpresslogin</span>
+              <span class="class-name">datadrivenwithexcel.Wordpresslogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -245,7 +291,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\welcome\AppData\Local\Temp\testng-eclipse-1502315893\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\welcome\AppData\Local\Temp\testng-eclipse-1544421491\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -254,7 +300,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;datadriven.Wordpresslogin&quot;/&gt;
+      &lt;class name=&quot;datadrivenwithexcel.Wordpresslogin&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -294,24 +340,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logintoword')
-data.setCell(0, 2, 'datadriven.Wordpresslogin')
-data.setCell(0, 3, 8239);
+data.setCell(0, 2, 'datadrivenwithexcel.Wordpresslogin')
+data.setCell(0, 3, 10300);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'logintoword')
-data.setCell(1, 2, 'datadriven.Wordpresslogin')
-data.setCell(1, 3, 935);
+data.setCell(1, 2, 'datadrivenwithexcel.Wordpresslogin')
+data.setCell(1, 3, 1033);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'logintoword')
-data.setCell(2, 2, 'datadriven.Wordpresslogin')
-data.setCell(2, 3, 859);
+data.setCell(2, 2, 'datadrivenwithexcel.Wordpresslogin')
+data.setCell(2, 3, 856);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'logintoword')
+data.setCell(3, 2, 'datadrivenwithexcel.Wordpresslogin')
+data.setCell(3, 3, 825);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -337,7 +387,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">datadriven.Wordpresslogin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">datadrivenwithexcel.Wordpresslogin</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browser</span>
                 <span class="method-start">0 ms</span>
@@ -345,38 +395,52 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">logintoword(adminnn, demo)</span>
-                <span class="method-start">7125 ms</span>
+                <span class="method-name">logintoword(admin, demo1)</span>
+                <span class="method-start">13694 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">7995 ms</span>
+                <span class="method-start">14731 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browser</span>
-                <span class="method-start">12447 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">logintoword(admin, demo123)</span>
-                <span class="method-start">18775 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">27017 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">browser</span>
-                <span class="method-start">31061 ms</span>
+                <span class="method-start">20888 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">logintoword(adminnn, demo1)</span>
-                <span class="method-start">38397 ms</span>
+                <span class="method-name">logintoword(admin1, demo12)</span>
+                <span class="method-start">28122 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">39336 ms</span>
+                <span class="method-start">28986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser</span>
+                <span class="method-start">33141 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logintoword(admin, demo123)</span>
+                <span class="method-start">42291 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">52591 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browser</span>
+                <span class="method-start">56742 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logintoword(admin2, demo123)</span>
+                <span class="method-start">63881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">64710 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
